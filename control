@@ -1,0 +1,18 @@
+Source: kali-win-kex
+Section: misc
+Priority: optional
+Maintainer: Kali Developers <devel@kali.org>
+Uploaders: Re4son <re4son@re4son.org>, Raphaël Hertzog <raphael@offensive-security.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.0
+Homepage: https://gitlab.com/kalilinux/packages/kali-win-kex
+Vcs-Git: https://gitlab.com/kalilinux/packages/kali-win-kex.git
+Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-win-kex
+
+Package: kali-win-kex
+Architecture: amd64
+Depends: ${misc:Depends}, tigervnc-standalone-server
+Recommends: kali-desktop-xfce
+Description: Kali Win-Kex Package
+ This package implements a VNC server and client
+ configuration to launch a Kali GUI desktop in WSL2.
